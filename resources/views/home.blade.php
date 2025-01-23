@@ -9,6 +9,12 @@
 <body>
     @auth
         <h1>Hello</h1>
+        <form action="/logout" method="POST">
+            @csrf
+            <button>Logout</button>
+        </form>
+  
+        
     @else
     <div style="border:  8px solid black; padding:15px">
         <h1>Register</h1>
@@ -20,7 +26,7 @@
             <button>register</button>
         </form>
     </div>
-
+    
     @endauth
     
    
